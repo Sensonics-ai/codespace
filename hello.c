@@ -6,5 +6,5 @@ int main(void)
     printf("hello, world\n");
 }
 
-// the ";" is 
+// the ";" is like "." in plain languaje.
 //finally working !!
