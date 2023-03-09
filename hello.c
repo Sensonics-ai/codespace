@@ -5,8 +5,9 @@
 
 int main(void)
 {
-    string answer = get_string("what's your name? ");
-    printf("hello, %s\n", answer);
+    string first = get_string("what's your first name? ");
+    string last = get_string("what's your last name? ");
+    printf("hello, %s %s\n", first, last);
 }
 // the "\n" stands for "New line". so the terminal will create a NEW LINE after running the program. It makes everything clearer. it's an Escape Sequence.
 // the ";" is like "." in plain languaje. we need to put it at the end of every "sentence".
