@@ -1,4 +1,4 @@
-//header (library), its calling for the function "printf" to exist. it's not gonna know what printf is if we dont import/include this particular library of C. it's like adding the voice lines library in Scratch.
+//header files (library), its calling for the function "printf" to exist. it's not gonna know what printf is if we dont import/include this particular library of C. it's like adding the voice lines library in Scratch.
 #include <stdio.h>
 
 int main(void)
