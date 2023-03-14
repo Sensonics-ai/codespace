@@ -7,7 +7,7 @@ int main(void)
 {
     char c = get_char("Do you agree?\n");
 
-    if (c == 'y')
+    if (c == 'y' || c == 'Y')
 
     {
         printf("Agreed.\n");
@@ -18,8 +18,8 @@ int main(void)
     // printf("Agreed.\n");
     //}
     //this however its not efficient. Something "smells" in this code. Hence how we could add the "OR" in the conditional sentence with the following:
-    // else if (c == )
-    else if (c == 'n')
+    // else if (c == 'y'|| c == 'Y')
+    else if (c == 'n'|| c == 'N')
     {
         printf("Not agreed.\n");
     }
