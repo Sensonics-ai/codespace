@@ -25,5 +25,5 @@ int main(void)
     {
     printf("x is equal to y\n");
     }
-
+//we put the "{}" in new lines for clarity.
 }
