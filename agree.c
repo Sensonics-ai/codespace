@@ -18,7 +18,7 @@ int main(void)
     // printf("Agreed.\n");
     //}
     //this however its not efficient. Something "smells" in this code. Hence how we could add the "OR" in the conditional sentence with the following:
-    // else if ()
+    // else if (c == )
     else if (c == 'n')
     {
         printf("Not agreed.\n");
