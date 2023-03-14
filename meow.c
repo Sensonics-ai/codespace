@@ -20,5 +20,10 @@ counter = counter + 1;
 
 counter += 1;
 
+//or even, if you know you are just gonna be adding "1";
+counter++;
+//also, substracting 1;
+counter--;
+
 
 }
