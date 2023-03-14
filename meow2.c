@@ -26,3 +26,12 @@ while (i > 0)
     printf("meow\n");
     i--;
 }
+
+//you could make it work counterwise with;
+
+int i = 1;
+while (i <=3)
+{
+    printf("meow\n");
+    i++;
+}
