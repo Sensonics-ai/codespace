@@ -9,4 +9,4 @@ int main(void)
      }
 }
 
-//the first part of this "int 1 = 0" its only executed once, the rest, after the ";" its locked in the loop
+//the first part of this "int 1 = 0" its only executed once, the rest, after the ";" its locked in the loop. 
