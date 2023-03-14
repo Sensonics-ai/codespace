@@ -5,5 +5,10 @@ int main(void)
 
 {
    int x = get_int("what's x?\n");
-   int y = get_int("what's y?)
+   int y = get_int("what's y?\n");
+
+   if (x < y)
+
+
+
 }
