@@ -16,4 +16,5 @@ int main(void)
     {
         printf("Not agreed.\n");
     }
+    // notice how we use single quotation 'marks' for single characters (chars) and double quotation marks for strings. This is a necessity in C. it
 }
