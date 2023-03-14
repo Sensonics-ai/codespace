@@ -17,6 +17,7 @@ int main(void)
     {
         printf("Agreed.\n");
     }
+    //this however its not efficient. Something "smells" in this code. 
     else if (c == 'n')
     {
         printf("Not agreed.\n");
