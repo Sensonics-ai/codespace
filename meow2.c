@@ -18,3 +18,11 @@ while (i > 0)
 }
 
 //since "i" its just a shorcut for "integer"
+//we can double up and make it even more simpler, taking into account the notes form meow.c
+
+int i = 3
+while (i > 0)
+{
+    printf("meow\n");
+    i--;
+}
