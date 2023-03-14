@@ -16,7 +16,7 @@ counter = counter + 1;
 
 // that just assigning counter current value + 1 to create the new counter value.
 //Note that you dont need to add "Int" because counter already exists. You only need "int" the first time you create something.
-//Alternatively you can write the line 15 differently;
+//Alter 
 
 counter += 1;
 
@@ -24,6 +24,5 @@ counter += 1;
 counter++;
 //also, substracting 1;
 counter--;
-
 
 }
