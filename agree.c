@@ -17,7 +17,7 @@ int main(void)
     //{
     // printf("Agreed.\n");
     //}
-    //this however its not efficient. Something "smells" in this code. Hence how we could add the "OR" in the conditional sentence with the following:
+    //this however its not efficient. Something "smells" in this code. Hence how we could add the "OR"(|| "Alt 124) in the conditional sentence with the following:
     // else if (c == 'y'|| c == 'Y')
     else if (c == 'n'|| c == 'N')
     {
