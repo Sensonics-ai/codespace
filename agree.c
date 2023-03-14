@@ -5,5 +5,15 @@
 
 int main(void)
 {
-    get_char("Do you agree?\n");
+    char c = get_char("Do you agree?\n");
+
+    if (c == 'y')
+    {
+        printf("Agreed.\n");
+
+    }
+    else if (c == 'n')
+    {
+        printf("Not agreed.\n");
+    }
 }
