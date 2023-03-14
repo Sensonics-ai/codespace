@@ -64,3 +64,11 @@ while (i <= 3)
     printf("meow\n");
     i++;
 }
+//or make i start on 0, then only write <
+
+int i = 0;
+while (i < 3)
+{
+    printf("meow\n");
+    i++;
+}
