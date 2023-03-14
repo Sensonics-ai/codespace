@@ -4,6 +4,10 @@
 //get printf function
 
 int main(void)
+//In C programming language, "int main(void)" is the declaration of the main function, which is the entry point of a C program.
+//Here, "int" specifies the return type of the function, which is an integer value that indicates the success or failure of the program execution. The integer value 0 indicates successful program execution, while a non-zero value indicates some error condition.
+//The "void" keyword inside the parentheses indicates that the main function doesn't take any parameters. In other words, it is a function that takes no arguments.
+//Therefore, "int main(void)" is a declaration that specifies the return type and argument list of the main function.
 
 {
    int x = get_int("what's x?\n");
