@@ -9,8 +9,7 @@ int main(void)
 
 //Lets rewrite it more flexibly
 
-mario.2
-{
+
 #include <stdio.h>
 
 int main(void)
@@ -20,5 +19,4 @@ int main(void)
         printf("?");
 
     }
-}
 }
