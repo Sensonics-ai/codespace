@@ -24,7 +24,7 @@ int get_size(void)
      {
      n = get_int("Size: ");
      }
-     while (n < 1)
+     while (n < 1);
      return n; //hand it back as a return value into the empty parentesis from line 8
 }
 
