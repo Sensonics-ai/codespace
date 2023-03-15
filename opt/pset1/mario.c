@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
-//In this case we need the cs50 library in order for the compiler to understand "get_int"
+
 
 int main(void)
 {
     int n = get_int("Size: ");
+    while (n < 1)
+    {
+         n = get_int("Size: ");
+    }
+//voilà! we have now solved that, but there 's still a slight inconvenience... we have duplicated the code.
+//turns out C can go around this with another functionality
 
     for (int i = 1; i <= n; i++)
     {
