@@ -9,7 +9,7 @@ int main(void)
      {
      n = get_int("Size: ");
      }
-     while (n < 1);
+     while (n < 1)
 //we are telling the compile to do the following: get int n from the user and store that value in n, while checking that the value n matches our requirements, in this case, to be an Int.
 
 
