@@ -1,7 +1,8 @@
-//include the library of functions that I will need.
+//include the library of default functions that I will need.
 #include <stdio.h>
 #include <cs50.h>
 
+//include the library of functions that I will create/define further down
 int get_size(void);
 void print_grid(int size);
 
