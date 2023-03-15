@@ -4,13 +4,14 @@
 
 int main(void)
 {
-    int n = get_int("Size: ");
-    while (n < 1)
-    {
-         n = get_int("Size: ");
-    }
-//voilà! we have now solved that, but there 's still a slight inconvenience... we have duplicated the code.
-//turns out C can go around this with another functionality
+     int n;
+     do
+     {
+     n = get_int("Size: ");
+     }
+     while (n < 1);
+//we are telling the compile to do the following: get int n from the user and store that value in n, while checking that the value n matches our requirements, in this case, to be an Int.
+
 
     for (int i = 1; i <= n; i++)
     {
