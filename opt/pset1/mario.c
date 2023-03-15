@@ -9,3 +9,16 @@ int main(void)
 
 //Lets rewrite it more flexibly
 
+mario.2
+{
+#include <stdio.h>
+
+int main(void)
+{
+    for (int i = 1; i <= 3; i++)
+    {
+        printf("?");
+
+    }
+}
+}
