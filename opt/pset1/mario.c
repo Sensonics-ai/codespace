@@ -1,10 +1,8 @@
 #include <stdio.h>
+
 int main(void)
 {
-for (int i = 1; i <= 3; i++)
+    printf("???\n");
+}
 
-{
-    printf("?\n");
-}
-printf("\n");
-}
+//this code will just print "???" but thats not efficient if I would like to change the number of rows and columns.
