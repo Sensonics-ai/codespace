@@ -1,7 +1,7 @@
-#include <stdbool.h>
+#include <cs50.h>
 #include <stdio.h>
 
-while(true)
+while (true)
 //this just basiscally translates to do something forever in C. Alternatively you could write "while (1)". but in order ti include the boolean "true" you need to have included the
 //library that contains it, in this case stdbool.h. (cs50.h also includes it)
 {
