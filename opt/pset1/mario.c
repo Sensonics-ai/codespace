@@ -6,6 +6,7 @@
 int get_size(void);
 void print_grid(int size);
 
+//start the program
 int main(void)
 {
     //get size of brick
