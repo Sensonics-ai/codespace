@@ -19,7 +19,7 @@ int main(void)
     }
     else if (x > y)
     {
-    printf("x is not less than y\n");
+    printf("y is less than x\n");
     }
     else if (x == y)
     {
