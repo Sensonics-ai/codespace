@@ -2,8 +2,9 @@
 
 int main(void)
 {
-    printf("hello, world\n");
+   printf("hello, world\n");
 }
 
-//clang (stands for C languaje). Take note on how its basically doing what make was doing for us. C lang is able to take "command line arguments".
-//It's just an additional word that modifies or specifies a bit that command.
+
+//it will create a program named hello.c
+//"-o" stands for output and it's basically telling the compiler to rename the program to hello.
