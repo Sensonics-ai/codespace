@@ -33,7 +33,7 @@ int get_size(void)
 //abstraction 2
 void print_grid(int size) //it has no output, hence why we have void at the beginning, the name of the function print_grid and finally the type and name of input inside the brackets
 {
-    for (int i = 1; i <= size; i++)
+    for (int i = 0; i <= size; i++)
     {
          for (int j = 1; j <= size; j++)
          {
