@@ -36,11 +36,12 @@ void print_grid(int size) //it has no output, hence why we have void at the begi
      //print the grid
      for (int i = 0; i < size; i++)
      {
-          for (int j = 0; j < size; j++)
-          {
-               printf("#");
-          }
-          printf("\n");
+         for (int j = 0; j < size; j++)
+         {
+             printf("#");
+         }
+         printf("\n");
+         
 
 }
 }
