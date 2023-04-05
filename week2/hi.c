@@ -4,6 +4,6 @@
 int main(void)
 {
    string s = "Hi!";
-   printf("%s\", s);
+   printf("%s\n", s);
 
 }
