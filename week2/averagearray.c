@@ -12,3 +12,13 @@ int main(void)
     }
     printf("Average: %f \n", average(scores, 3));
 }
+
+float average(int array[])
+{
+    int sum = 0;
+    for (int i = 0; i < length; i++)
+    {
+        sum += array[i];
+    }
+    return sum / (float) length;
+}
