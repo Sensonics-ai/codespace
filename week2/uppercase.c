@@ -8,7 +8,7 @@ int main(void)
 {
     string s = get_string("Before: ");
     printf("After: ");
-    for (int i = 0, n = strlen(s); i < n; i++)
+    for (int i = 0, n = strlen(s); i < n; i++)  //this is how you get the length of a string
     {
         printf("%c", toupper(s[i]));    //this ctype formula will print the character in uppercase
     }
