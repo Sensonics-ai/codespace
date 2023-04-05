@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <cs50.h>
 #include <string.h>
-#include <ctype.h>
+#include <ctype.h>  //this is the library that contains the toupper function
 
 int main(void)
 {
@@ -10,7 +10,7 @@ int main(void)
     printf("After: ");
     for (int i = 0, n = strlen(s); i < n; i++)
     {
-        printf("%c", toupper(s[i]));
+        printf("%c", toupper(s[i]));    //this ctype formula will print the character in uppercase
     }
     printf("\n");
 }
