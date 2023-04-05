@@ -14,5 +14,5 @@ int main(int argc, string argv[]) //now the main function has two arguments: arg
 }
 {
     string name = get_string("What is your name?\n");
-    printf("hello, %s\n", name);
+    printf("hello, %s\n", argv[1], argv[2]);
 }
