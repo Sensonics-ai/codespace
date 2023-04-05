@@ -4,6 +4,7 @@
 int main(void)
 {
    string s = "Hi!";
-   printf("%s\n", s);
+   printf("%i %i %i %i\n", s[0], s[1], s[2], s[3]); //this will print the ASCII values of the characters in the string
+
 
 }
