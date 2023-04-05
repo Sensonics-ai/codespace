@@ -1,3 +1,4 @@
+//I want to create an array of 3 scores, and then calculate the average of the 3 scores
 #include <stdio.h>
 
 int main(void)
