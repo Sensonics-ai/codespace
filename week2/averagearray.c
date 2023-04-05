@@ -12,7 +12,7 @@ int main(void)
     {
         scores[i] = get_int("Score: ");
     }
-    printf("Average: %f \n", average(scores, N));   //this is how you call a function, you pass the arguments in the same order as they are declared in the function prototype
+    printf("Average: %f \n", average(scores));   //this is how you call a function, you pass the arguments in the same order as they are declared in the function prototype
 }
 
 float average(int array[])  //this is the function definition, it is the actual code that is executed when the function is called
