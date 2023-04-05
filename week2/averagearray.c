@@ -15,12 +15,12 @@ int main(void)
     printf("Average: %f \n", average(scores, N));   //this is how you call a function, you pass the arguments in the same order as they are declared in the function prototype
 }
 
-float average(int array[])
+float average(int array[])  //this is the function definition, it is the actual code that is executed when the function is called
 {
     int sum = 0;
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < N; i++)
     {
-        sum += array[i];
+        sum += array[i];    //this is the same as sum = sum + array[i]
     }
-    return sum / (float) length;
+    return sum / (float) N; //this is how you return a value from a function
 }
