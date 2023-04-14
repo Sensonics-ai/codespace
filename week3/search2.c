@@ -11,7 +11,7 @@ int main(void)
     {
         if (strcmp(strings [i], s) == 0) //if the given string is equal to the string in the array
         {
-            printf("Found %s\n");
+            printf("Found\n");
 
             return 0;
         }
