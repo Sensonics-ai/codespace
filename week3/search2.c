@@ -9,7 +9,14 @@ int main(void)
     string s = get_string("String: "); //get the string from the user
     for (int i = 0; i < 5; i++)
     {
-        if (strcmp(s, strings[i]) == 0) //if the string is equal to the string in the array
+        if (strings[i] == s) //if the string is equal to the string in the array
         {
-            printf("Found
+            printf("Found %s\n");
+
+            return 0;
+        }
+    }
+    printf("Not found\n");
+
+    return 1;
 }
