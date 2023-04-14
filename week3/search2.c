@@ -1,6 +1,6 @@
 #include    <cs50.h>
 #include    <stdio.h>
-#include    <string.h> //for strlen and for being able to use == to compare strings
+#include    <string.h> //for strcmp (string compare) and for being able to use == to compare strings and
 
 int main(void)
 {
@@ -9,7 +9,7 @@ int main(void)
     string s = get_string("String: "); //get the string from the user
     for (int i = 0; i < 5; i++)
     {
-        if (strings[i] == s) //if the string is equal to the string in the array
+        if (strcmp(strings [i], s) == 0) //if the given string is equal to the string in the array
         {
             printf("Found %s\n");
 
