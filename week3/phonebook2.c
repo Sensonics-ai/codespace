@@ -13,7 +13,7 @@ person;
 int main(void)
 
 {
-    person people[2];
+    person people[2];   //create an array of
 
     people[0].name = "Carter";
     people[0].number = "617-555-0100";
