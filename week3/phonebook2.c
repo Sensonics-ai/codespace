@@ -22,7 +22,7 @@ int main(void)
     people[1].number = "617-555-0101";
 
     string name = get_string("Name: ");  //prompt the user for a name
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 2; i++) //loop through the people array
     {
         if (strcmp(people[i].name, name) == 0)  //if the given name is equal to the name in the array
         {
