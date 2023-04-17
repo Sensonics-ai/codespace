@@ -1,5 +1,6 @@
 {
     "gitdoc.enabled": true,
     "editor.suggest.showStatusBar": true,
-    "debug.showInStatusBar": "always"
+    "debug.showInStatusBar": "always",
+    "workbench.editor.restoreViewState": false
 }
