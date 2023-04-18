@@ -13,7 +13,7 @@ person;     //call the struct person
 int main(void)
 
 {
-    person people[3];   //create an array of people of size 3
+    person people[3];   //create an array of people of size 3, from 0 to 2
 
     people[0].name = "Carter";  //assign the name and number to the people 0
     people[0].number = "617-555-0100";
