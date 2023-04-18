@@ -6,7 +6,8 @@ void draw(int n);    //declare the function draw
 int main(void)      //main function
 {
     int height = get_int("Height: ");   //prompt the user for a height
-    draw(1);    //call the function draw
+    draw(height);   //call the function draw
+
 
 }
 
@@ -18,7 +19,8 @@ void draw(int n)    //define the function draw
         return;     //return
     }
 
-    draw(n-1);      //call the function draw again
+    draw(n-1);  //call the function draw again
+
     for (int i = 1; i < n + 1; i++)    //loop through the height
     {
 
@@ -27,5 +29,5 @@ void draw(int n)    //define the function draw
 
     }
     printf("\n");       //print a new line
-    
+
 }
