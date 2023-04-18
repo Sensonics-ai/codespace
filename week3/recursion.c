@@ -7,13 +7,10 @@ int main(void)      //main function
 {
     int height = get_int("Height: ");   //prompt the user for a height
     draw(height);   //call the function draw
-
-
 }
 
 void draw(int n)    //define the function draw
 {
-
     if (n <= 0)     //if the height is less than or equal to 0
     {
         return;     //return to the main function
@@ -23,11 +20,7 @@ void draw(int n)    //define the function draw
 
     for (int i = 1; i < n + 1; i++)    //loop through the height
     {
-
             printf("#");    //print the # symbol
-
-
     }
     printf("\n");       //print a new line
-
 }
