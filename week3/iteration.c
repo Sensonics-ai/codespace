@@ -2,6 +2,7 @@
 #include    <stdio.h>
 
 void draw(int n);
+
 int main (void)
 {
     int height = get_int("Height: ");
@@ -9,11 +10,11 @@ int main (void)
 
 }
 
-void draw(int n);
+void draw(int n)
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i < n + 1; i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = 1; j < i + 1; j++)
         {
             printf("#");
         }
