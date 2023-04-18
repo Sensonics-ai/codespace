@@ -1,23 +1,23 @@
-#include    <cs50.h>
-#include    <stdio.h>
+#include    <cs50.h>        //include the libraries
+#include    <stdio.h>       //include the libraries
 
-void draw(int n);
+void draw(int n);       //declare the function draw
 
-int main (void)
+int main (void)     //main function
 {
-    int height = get_int("Height: ");
-    draw(height);
+    int height = get_int("Height: ");       //prompt the user for a height
+    draw(height);       //call the function draw
 
 }
 
-void draw(int n)
+void draw(int n)        //define the function draw
 {
-    for (int i = 1; i < n + 1; i++)
+    for (int i = 1; i < n + 1; i++)     //loop through the height
     {
-        for (int j = 1; j < i + 1; j++)
+        for (int j = 1; j < i + 1; j++)     //loop through the width
         {
-            printf("#");
+            printf("#");        //print the # symbol
         }
-        printf("\n");
+        printf("\n");       //print a new line
     }
 }
