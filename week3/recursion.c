@@ -16,7 +16,7 @@ void draw(int n)    //define the function draw
 
     if (n <= 0)     //if the height is less than or equal to 0
     {
-        return;     //return
+        return;     //return to the main function
     }
 
     draw(n-1);  //call the function draw again
