@@ -12,6 +12,13 @@ int main(void)      //main function
 
 void draw(int n)    //define the function draw
 {
+
+    if (n <= 0)     //if the height is less than or equal to 0
+    {
+        return;     //return
+    }
+
+    draw(n-1);      //call the function draw again
     for (int i = 1; i < n + 1; i++)    //loop through the height
     {
 
@@ -20,5 +27,5 @@ void draw(int n)    //define the function draw
 
     }
     printf("\n");       //print a new line
-    draw(n + 1 );   //call the function draw again
+    
 }
