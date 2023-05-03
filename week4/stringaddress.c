@@ -1,9 +1,11 @@
-#include <cs50.h>
-#include <stdio.h>
+#include    <stdio.h>
 
 int main(void)
 {
-    string s = "Hi!";   //s is a string, and it points to the address of the first character of the string
-    printf("%s\n", s);  //prints the string
-
+    char *s = "Uri";
+    printf("%p\n", s);
+    printf("%p\n", &s[0]);
+    printf("%p\n", &s[1]);
+    printf("%p\n", &s[2]);
+    printf("%p\n", &s[3]);
 }
