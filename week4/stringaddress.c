@@ -6,5 +6,4 @@ int main(void)
     printf("%p\n", *s);
     printf("%p\n", *(s+1));
     printf("%p\n", *(s+2));
-    printf("%p\n", *(s+3));
 }
