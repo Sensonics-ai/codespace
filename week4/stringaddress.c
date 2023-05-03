@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    char *s = "Uri";
-    printf("%p\n", *s);
-    printf("%p\n", *(s+1));
-    printf("%p\n", *(s+2));
+    char *s = "Uri";    // s is a pointer to a string
+    printf("%c\n", *s); // *s is the first character of the string
+    printf("%c\n", *(s+1));     // *(s+1) is the second character of the string
+    printf("%c\n", *(s+2));     // *(s+2) is the third character of the string
 }
