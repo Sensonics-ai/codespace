@@ -5,11 +5,14 @@
 
 int main(void)
 {
-    string s = get_string("s: ");       // get a string from the user
+    char *s = get_string("s: ");       // get a string from the user
 
-    string t = s;                // copy the string into another variable
+    char *t = s;                // copy the string into another variable
 
-    t[0] = toupper(t[0]);        // capitalize the first letter in the copy
+    if (strlen(t) > 0)           // check that the string is not empty
+    {
+        t[0] = toupper(t[0]);    // capitalize the first letter in the copy
+    }
 
     printf("s: %s\n", s);        // print the original
     printf("t: %s\n", t);        // print the copy
