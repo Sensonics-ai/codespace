@@ -8,11 +8,12 @@ int main(void)
 {
     char *s = get_string("s: ");       // get a string from the user
 
-    char *t = malloc(strlen(s) + 1);  // allocate memory for another string
+    char *t = malloc(strlen(s) + 1);  // allocate memory for another string +1 for the null character
+                                      //at the moment t is a pointer to a string of length 0
 
-    if (strlen(t) > 0)           // check that the string is not empty
+  for (int i = 0, i < strlen(s); i <= n; i++) // copy string into memory
     {
-        t[0] = toupper(t[0]);    // capitalize the first letter in the copy
+        t[i] = s[i];                      // copy each character from s to  t
     }
 
     printf("s: %s\n", s);        // print the original
