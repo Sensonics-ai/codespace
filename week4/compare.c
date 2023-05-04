@@ -3,16 +3,15 @@
 
 int main(void)
 {
-    int i = get_int("i: "); // get_int is a function that returns an integer
-    int j = get_int("j: "); // get_int is a function that returns an integer
-
-    if (i == j) // compare the values of i and j
+    string s = get_string("s: "); // s is a pointer to a string
+    string t = get_string("t: ");   // t is a pointer to a string
+    if (s == t) // compare the addresses of the two strings
     {
-        printf("Same\n");   // print "Same" if i and j are equal
+        printf("Same\n");   // if the addresses are the same, the strings are the same
     }
     else
     {
-        printf("Different\n");  // print "Different" if i and j are not equal
+        printf("Different\n");  // if the addresses are different, the strings are different
     }
 
 }
