@@ -2,14 +2,11 @@
 
 int main(void)
 {
-    int list [3];   // array of 3 integers
-    list[0] = 1;    // set first element to 1
-    list[1] = 2;    // set second element to 2
-    list[2] = 3;    // set third element to 3
+    int *list = malloc(3 * sizeof(int)); // allocate memory for 3 integers
 
-    for (int i = 0; i < 3; i++)
-    {
-        printf("%i\n", list[i]);    // print each element
-    }
+    list[0] = 1; // store 1 in the first integer
+    list[1] = 2; // store 2 in the second integer
+    list[2] = 3; // store 3 in the third integer
+
 
 }
