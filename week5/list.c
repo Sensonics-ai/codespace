@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    int *list = malloc(3 * sizeof(int)); // allocate memory for 3 integers
+    int *list = malloc(3 * sizeof(int)); // allocate memory for 3 integers, hence list is now a pointer to an integer
     if (list == NULL) // if malloc returns NULL, exit
     {
         return 1;   // return 1 to indicate an error
@@ -23,6 +23,11 @@ int main(void)
     {
         tmp[i] = list[i]; // copy each integer from list to tmp
     }
+    tmp[3] = 4; // store 4 in the fourth integer
+
+    free(list); // free the memory allocated for list
+
+    list = tmp; // set list to point to the same memory as tmp
 
     for (int i = 0; i < 3; i++) // iterate over the array
     {
