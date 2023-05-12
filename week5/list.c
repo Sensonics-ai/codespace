@@ -33,6 +33,8 @@ int main(void)
     {
         printf("%i\n", list[i]); // print each integer
     }
+    free(list); // free the memory allocated for list
+    return 0;   // return 0 to indicate success
 
 
 }
