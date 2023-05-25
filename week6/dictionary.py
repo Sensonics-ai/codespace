@@ -14,9 +14,9 @@ def load(dictionary):               # load dictionary into memory
     file.close()                    # close file
     return True                     # return True if successful
 
-def size():
-    return len(words)
+def size():                         # return number of words in dictionary
+    return len(words)               # return length of set
 
 
-def unload():
-    return True
+def unload():                       # unload dictionary from memory
+    return True                     # return True if successful
