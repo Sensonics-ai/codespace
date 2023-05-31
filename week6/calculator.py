@@ -1,5 +1,5 @@
 
-x = input("x: ")       # using input to get a number from the user
-y = input("y: ")       # using input to get a number from the user
+x = input("x: ")
+y = input("y: ")
 
-print(x + y)
+print(int(x) + int(y))                    # int() converts the string to an integer
