@@ -7,4 +7,4 @@ def main():     # main function definition
     def meow():     # function definition
         print("meow")       # function body/name
 
-main()      # function call
+    main()      # function call
