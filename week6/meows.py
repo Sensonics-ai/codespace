@@ -1,7 +1,7 @@
-def meow():
-    print("meow")
+def meow():     # function definition
+    print("meow")       # function body/name
 
-
-for i in range(5):
-    meow()
+def main():     # main function definition
+for i in range(5):      # for loop
+    meow()      # function call
 
