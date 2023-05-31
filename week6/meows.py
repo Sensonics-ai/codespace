@@ -3,8 +3,8 @@ def main():     # main function definition
         meow()      # function call
 
 
-    def meow():     # function definition
-        print("meow")       # function body/name
+def meow():     # function definition
+   print("meow")       # function body/name
 
 
-    main()      # function call
+main()      # function call
