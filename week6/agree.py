@@ -2,8 +2,9 @@
 
 s = input("Do you agree? ")     # input() is a function that takes a string as an argument and returns a string as a result
 
-if s.lower() in ["y", "yes"]:   # s.lower() is a method that returns a string in lowercase
+s = s.lower()
+if s in ["y", "yes"]:   # s.lower() is a method that returns a string in lowercase
     print("Agreed.")
 
-elif s.lower() in ["n", "no"]:  # s.lower() can be used in python to convert a string to lowercase
+elif s in ["n", "no"]:  # s.lower() can be used in python to convert a string to lowercase
     print("Not agreed.")
