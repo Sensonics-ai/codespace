@@ -1,6 +1,7 @@
-
+def meow():
+    print("meow")
 
 
 for i in range(5):
-    print("meow")
-    i += 1
+    meow()
+
