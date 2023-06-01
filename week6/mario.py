@@ -8,11 +8,11 @@ def main():
 
 def get_height():
     while True:
-     try:                                    # try to get an integer from the user
+     try:                                   # try to get an integer from the user
         n = int(input("Height: "))          # if successful, return the integer
-        if n >= 1 and n <= 8:               # if the integer is between 1 and 8, inclusive
+        if n >= 1                           # if the integer is equal or greater than 1
             return n                        # return the integer
-     except ValueError:                       # if the user did not input an integer
+     except ValueError:                      # if the user did not input an integer
             print("Invalid input")          # print an error message
 
 main()
