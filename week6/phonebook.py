@@ -7,8 +7,12 @@ people = {  # Dictionary
     "Jocelyn": "678-901-2345",
     "Carter:": "789-012-3456",
 
+    #A dictionary is very similar to a list, or arrays in C, but instead of being limited to numbers, you can use words as the index
+
 }
 
 name = input("Name: ")              # Get name from user
 if name in people:                 # If name is in people
     print(f"Number: {people[name]}")    # Print number, note the f string and
+
+    #this function will store names and numbers in a dictionary and print the number if the name is found in the dictionary
