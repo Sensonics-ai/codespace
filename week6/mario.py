@@ -12,7 +12,7 @@ def get_height():
         n = int(input("Height: "))          # if successful, return the integer
         if n >= 1 and n <= 8:               # if the integer is between 1 and 8, inclusive
             return n                        # return the integer
-        except ValueError:               # if the user did not input an integer
+     except ValueError:                       # if the user did not input an integer
             print("Invalid input")          # print an error message
 
 main()
