@@ -13,6 +13,7 @@ people = {  # Dictionary
 
 name = input("Name: ")              # Get name from user
 if name in people:                 # If name is in people
-    print(f"Number: {people[name]}")    # Print number, note the f string and
+    number = people[name]          # Get number from people
+    print(f"Number: {number}")    # Print number
 
     #this function will store names and numbers in a dictionary and print the number if the name is found in the dictionary
