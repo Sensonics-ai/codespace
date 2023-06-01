@@ -8,3 +8,4 @@ for i in range(3):                    #for loop
 average = sum(scores) / len(scores)
 print(f"Average: {average}")        #print the average
 
+# this function will take a list of numbers and return the average
