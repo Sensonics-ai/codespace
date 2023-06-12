@@ -9,5 +9,8 @@ with open('favorites.csv', 'r') as f:           # open the csv file in python in
             scratch += 1                        # add 1 to the variable "scratch"
         elif favorite == "C":                   # if the value of the variable "favorite" is "C"
             c += 1                              # add 1 to the variable "c"
-        elif favorite == "Python":              # if the value of the variable "favorite" is "Python"
+        elif favorite == "Python":              # if the value of the variable "favorite" is "Python", we need to do elif  just in case someone adds a new language
             python += 1                         # add 1 to the variable "python"
+print (f"Scratch: {scratch}")                   # print the variable "scratch"
+print (f"C: {c}")                               # print the variable "c"
+print (f"Python: {python}")                     # print the variable "python"
