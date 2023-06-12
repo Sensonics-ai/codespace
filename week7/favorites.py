@@ -5,3 +5,4 @@ with open('favorites.csv', 'r') as f:       # open the csv file in python in rea
     for row in reader:                      # iterate over the rows, for every row in the file print a different number
         favorite = row[1]                   # store the second column of every row in a variable called "favorite", which is the name of that column in the csv file
         print(favorite)                       # print the column named "favorite" of every row, which we know is column 2
+        
