@@ -12,9 +12,10 @@
    <form action="https://www.google.com/search" method="get">           <!-- #<form> defines an HTML form for user input.
                                                                         The <form> element can contain one or more of the following form elements:
                                                                         <input>, <textarea>, <button>, <select>, <option>, <optgroup>, <fieldset>, <label>,
-                                                                            <output>, <progress>, <meter>, <datalist>, <keygen>, <command>, <menu>.-->
-        <input name="q" type="search">
-        <input type="submit" value="Google Search">
+                                                                                <output>, <progress>, <meter>, <datalist>, <keygen>, <command>, <menu>.-->
+
+        <input autocomplete="off" name="q" placeholder="Query" type="search">  
+        <input type="submit" value="Google Search">                 <!-- #<input> defines an input control. An input control can be a text field, checkbox, radio button, or submit button.-->
 
    </form>
 
