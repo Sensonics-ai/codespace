@@ -3,23 +3,21 @@
 <html lang="en">
 <head>
     <style>
-        header {
-            background-color: #AA0000;    /* #background-color is used to specify the background color of an element. */
-            color: #FFFFFF;              /* #color is used to specify the text color of an element. */
-            text-align: center;          /* #text-align is used to specify the horizontal alignment of text in an element. */
-            padding: 5px;                /* #padding is used to generate space around an element's content, inside of any defined borders. */       }
-        main {
-            background-color: #FFFFFF;
-            color: #000000;
-            text-align: center;
-            padding: 5px;
+
+      .centered {
+        text-align: center;
+              }
+      .large {
+        font-size: large;
+              }
+        .medium {
+        font-size: medium;
+              }
+        .small {
+        font-size: small;
         }
-        footer {
-            background-color: #FF0000;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 5px;
-        }
+
+
     </style>
    <title>
             Home
@@ -27,14 +25,14 @@
 
 </head>
 
-<body>
-   <Header>
+<body class="centered">
+   <Header class="large">
     John Harvard
   </header>
-    <Main>
+    <Main class="medium">
      welcome to my homepage
     </main>
-    <footer>
+    <footer class="small">
      Copyright &#169; John Harvard 1636
      </footer>
 
