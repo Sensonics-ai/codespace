@@ -2,20 +2,16 @@
 <html lang="en">
      <head>
           <script>                                                            // a script is a series of instructions that a computer can follow to achieve a goal. Scripts are made up of instructions a computer can follow step-by-step. A browser may use different parts of the script depending on how the user interacts with the web page.
-                document.addEventListener('DOMContentLoaded', () => {        // #The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
-                    document.querySelector('form').onsubmit = () => {       // #The querySelector() method returns the first element that matches a specified CSS selector(s) in the document. If no matches are found, null is returned.
+                document.addEventListener('DOMContentLoaded', function() {        // #The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
+                    document.querySelector('form').addEventListener('submit', function(event){       // #The querySelector() method returns the first element that matches a specified CSS selector(s) in the document. If no matches are found, null is returned.
                          let name = document.querySelector('#name').value;  // #document.querySelector() returns the first element that matches a specified CSS selector(s) in the document. If no matches are found, null is returned.
                          alert(`Hello, ${name}!`);
-                         return false;
-                    };
-               function greet() {                                               // #A function is a block of code that performs a specific task. A function is executed when it is called. You can reuse functions within the same script, or in other documents. You can also pass values to a function, and return values from a function.
-                    let name = document.querySelector('#name').value;         // #document.querySelector() returns the first element that matches a specified CSS selector(s) in the document. If no matches are found, null is returned.
-                    alert(`Hello, ${name}!`);
-                    event.preventDefault();                                    // #The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
-               }
+                         event.preventDefault();                             // #The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+
+                    });
           </script>
           <title>
-                 Hello, title
+                 Hello, Java
 
          </title>
     </head>
