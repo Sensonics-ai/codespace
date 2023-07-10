@@ -13,7 +13,7 @@
          </title>
     </head>
     <body>
-     <form onsubmit="greet()">                                                       <!-- #<form> is a container for form elements. It can contain one or more of the following form elements: <input>, <textarea>, <button>, <select>, <option>, <optgroup>, <fieldset>, <label>, <output>, <progress>, <meter>, <datalist>, and <keygen>.-->
+     <form onsubmit="greet(); return false;">                                                       <!-- #<form> is a container for form elements. It can contain one or more of the following form elements: <input>, <textarea>, <button>, <select>, <option>, <optgroup>, <fieldset>, <label>, <output>, <progress>, <meter>, <datalist>, and <keygen>.-->
           <input autocomplete="off" autofocus placeholder="Name" type="text">                  <!-- #<input> is an empty element that is used to get input from the user. It can have several types, such as text, password, email, number, etc.-->
           <input type="submit">Greet</button>                                                  <!-- #<button> defines a clickable button.-->
      </form>
