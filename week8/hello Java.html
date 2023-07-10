@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
      <head>
+          <script>                                                              // a script is a series of instructions that a computer can follow to achieve a goal. Scripts are made up of instructions a computer can follow step-by-step. A browser may use different parts of the script depending on how the user interacts with the web page.
+               function greet() {                                               // #A function is a block of code that performs a specific task. A function is executed when it is called. You can reuse functions within the same script, or in other documents. You can also pass values to a function, and return values from a function.
+                    const name = document.querySelector('input').value;         // #document.querySelector() returns the first element that matches a specified CSS selector(s) in the document. If no matches are found, null is returned.
+                    alert(`Hello, ${name}!`);
+               }
+          </script>
           <title>
                  Hello, title
 
          </title>
     </head>
     <body>
-     <form>
-          <input autocomplete="off" autofocus placeholder="Name" type="text">
-          <input type="submit">Greet</button>
+     <form onsubmit="greet()">                                                       <!-- #<form> is a container for form elements. It can contain one or more of the following form elements: <input>, <textarea>, <button>, <select>, <option>, <optgroup>, <fieldset>, <label>, <output>, <progress>, <meter>, <datalist>, and <keygen>.-->
+          <input autocomplete="off" autofocus placeholder="Name" type="text">                  <!-- #<input> is an empty element that is used to get input from the user. It can have several types, such as text, password, email, number, etc.-->
+          <input type="submit">Greet</button>                                                  <!-- #<button> defines a clickable button.-->
      </form>
 
 
