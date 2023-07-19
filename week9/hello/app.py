@@ -2,10 +2,11 @@ from flask import Flask, render_template, request       # import flask functions
 
 app = Flask(__name__)                                   # create an app instance
 
-@app.route('/')                                         # @ is a decorator, at the end point /
+@app.route("/")                                         # @ is a decorator, at the end point /
 def index():
-    return render_template('index.html')                 # which function to call
     if "name" in request.args:
+        name = request.args["name"]
     else:
-        return render_template('index.html')
-    app.run(debug=True)                                 # run the server in debug mode
+          name = "World"
+    return render_template('index.html')
+
