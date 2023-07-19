@@ -4,6 +4,6 @@ app = Flask(__name__)                                   # create an app instance
 
 @app.route('/')                                         # @ is a decorator, at the end point /
 def index():
-    return "hello, world"                               # return a string
+    return render_template('index.html')                 # which function to call
 
 
