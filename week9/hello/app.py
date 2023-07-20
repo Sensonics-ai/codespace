@@ -10,3 +10,11 @@ def index():
           name = "World"                                # a variable called name with a value of "World"
     return render_template("index.html", name=name)     # render the template with the name variable
 
+@app.route("/greet")
+
+def greet():
+    if "name" in request.args:                          # if there is a name in the request args
+        name = request.args["name"]                     # a variable called name with a value of the name in the request args
+    else:                                               # if there is no name in the request args
+          name = "World"                                # a variable called name with a value of "World"
+    return render_template("greet.html", name=name)     # render the template with the name variable
