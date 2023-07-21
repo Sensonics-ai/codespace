@@ -2,13 +2,19 @@
 
 <html lang="en">
     <head>
-        <meta name="viewport" content="initial-scale=1", >
+        <meta name="viewport" content="initial-scale=1", width="device-width">
         <title>Frosh IMs</title>
     </head>
     <body>
         <ul>
-            <?php foreach ($names as $name): ?>
-                <li><?= htmlspecialchars($name) ?></li>
-            <?php endforeach ?>
+            <form action="/register" method="post">
+                <input autocomplete="off" autofocus name="name" placeholder="Name" type="text"/>
+                <select>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Soccer">Soccer</option>
+                    <option value="Hockey">Hockey</option>
+                </select>
+                 
+            </form>>
         </ul>
     </body>
