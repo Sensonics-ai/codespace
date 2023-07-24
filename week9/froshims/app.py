@@ -3,7 +3,7 @@ from flask import Flask, render_template, request           # import flask funct
 app = Flask(__name__)                                       # create an app instance
 
 
-registrants = {}
+REGISTRANTS = {}
 
 
 @app.route("/")                                             # @ is a decorator, at the end point /
@@ -20,4 +20,4 @@ def register():
 
 @app.route("/registrants")
 def registrants():
-    return render_template("registrants.html", registrants=registrants)
+    return render_template("registrants.html", registrants=REGISTRANTS)
