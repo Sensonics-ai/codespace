@@ -2,7 +2,7 @@
 
 {% block body %}
     <ul>
-        {% for registrant in registrants %}
+        {% for name in registrants %}
             <li>{{ registrant.name }} ({{ registrant.sport }})</li>
         {% endfor %}
     </ul>
