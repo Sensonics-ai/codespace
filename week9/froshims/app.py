@@ -13,6 +13,8 @@ def index():                                                                # in
 @app.route("/register", methods=["POST"])                                   # route to /register
 def register_user():                                                        # register_user() is a function
     name = request.form.get("name")                                         # get the name and sport from the form
+    if not name:
+        return render_template("failure.html")                               # render failure.html
     sport = request.form.get("sport")                                        # get the name and sport from the form
     if sport not in SPORTS:                                                 # if sport is not in SPORTS
         return render_template("failure.html")                               # render failure.html
