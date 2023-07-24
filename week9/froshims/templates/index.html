@@ -1,12 +1,5 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
 
-<html lang="en">
-    <head>
-        <meta name="viewport" content="initial-scale=1", width="device-width">
-        <title>Frosh IMs</title>
-    </head>
-    <body>
-        <ul>
             <form action="/register" method="post">
                 <input autocomplete="off" autofocus name="name" placeholder="Name" type="text"/>
                 <select>
@@ -17,5 +10,3 @@
                 </select>
                 <button type="submit">Register</button>
             </form>
-        </ul>
-    </body>
