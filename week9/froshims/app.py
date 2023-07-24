@@ -1,22 +1,20 @@
-from flask import Flask, render_template, request           # import flask functions and libraries (the building blocks)
+from flask import Flask, render_template, request
 
-app = Flask(__name__)                                       # create an app instance
-
+app = Flask(__name__)
 
 REGISTRANTS = {}
 
-
-@app.route("/")                                             # @ is a decorator, at the end point /
-def index():                                                # define a function called index
-    return render_template("index.html")                    # render the template
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/register", methods=["POST"])
-def register():
+def register_user():
     name = request.form.get("name")
     sport = request.form.get("sport")
-    registrants[name] = sport
+    REGISTRANTS[name] = sport
     return render_template("success.html")
 
 @app.route("/registrants")
-def registrants():
+def show_registrants():
     return render_template("registrants.html", registrants=REGISTRANTS)
