@@ -15,7 +15,7 @@ def register_user():                                                        # re
     name = request.form.get("name")                                         # get the name and sport from the form
     sport = request.form.get("sport")                                        # get the name and sport from the form
     if sport not in SPORTS:                                                 # if sport is not in SPORTS
-
+        return render_template("failure.html")                               # render failure.html
     REGISTRANTS[name] = sport                                               # add name and sport to dictionary
     return render_template("success.html")                                  # render success.html
 
