@@ -7,7 +7,7 @@ app = Flask(__name__)                                       # create an app inst
 def index():                                                # define a function called index
     return render_template("index.html")                    # render the template
 
-@app.route("/register")
+@app.route("/register", methods=["POST"])
 def register():
 
     return render_template("success.html")
