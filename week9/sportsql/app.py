@@ -19,18 +19,17 @@ def index():
 
 @app.route("/register", methods=["POST"])
 def register():
+    # check for proper submission
+    name = request.form.get("name")
+    sport = request.form.get("sport")
+    if not name or sport not in SPORTS:
+        return render_template("failure.html")
 
-    #check for proper submission
-    name = request.form.get("name")                     #get name from form
-    sport = request.form.get("sport")                   #get sport from form
-    if not name or sport not in SPORTS:                 #if name is blank or sport is not in the list of sports
-        return render_template("failure.html")          #return failure page
+    # remember the registrant
+    db.execute("INSERT INTO registrants (name, sport) VALUES(:name, :sport)", name=name, sport=sport)
 
-    #remember the registrant
-    db.execute("INSERT INTO registrants (name, sport) VALUES(:name, :sport)", name=name, sport=sport)           #insert name and sport into registrants table
-
-    #confirm registration
-    return redirect("/registrants")                                                                             #redirect to registrants page
+    # confirm registration
+    return render_template("success.html", sport=sport)
 
 
 @app.route("/registrants")                                                                      #route to registrants page
